@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "b467083d-6355-4800-8859-71695e8d250d",
+		"name": "Mock server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4641087"
+	},
+	"item": [
+		{
+			"name": "collectionItems",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/collectionItems",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"collectionItems"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "collectionItems",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/collectionItems",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"collectionItems"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{ \"collectionItems\":\n [{\"link\":\"1\", \"name\":\"test1\", \"summary\":\"Summary Test 1\", \"year\":\"2001\", \"country\":\"us\", \"price\":\"1000\", \"description\":\"Desc 1\"}]\n}\n"
+				},
+				{
+					"name": "single item",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/collectionItems/item/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"collectionItems",
+								"item",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"link\":\"1\", \"name\":\"test1\", \"summary\":\"Summary Test 1\", \"year\":\"2001\", \"country\":\"us\", \"price\":\"1000\", \"description\":\"Desc 1\"}"
+				},
+				{
+					"name": "update item",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/collectionItems/item/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"collectionItems",
+								"item",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"link\":\"1\", \"name\":\"test1\", \"summary\":\"Summary Test 1\", \"year\":\"2001\", \"country\":\"us\", \"price\":\"1000\", \"description\":\"Desc 1\"}"
+				},
+				{
+					"name": "delete item",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/collectionItems/item/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"collectionItems",
+								"item",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"link\":\"1\", \"name\":\"test1\", \"summary\":\"Summary Test 1\", \"year\":\"2001\", \"country\":\"us\", \"price\":\"1000\", \"description\":\"Desc 1\"}"
+				},
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/collectionItems/item/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"collectionItems",
+								"item",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"link\":\"1\", \"name\":\"test1\", \"summary\":\"Summary Test 1\", \"year\":\"2001\", \"country\":\"us\", \"price\":\"1000\", \"description\":\"Desc 1\"}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://ba7e16db-560a-40ba-9fdc-2c9f2a439e0a.mock.pstmn.io"
+		}
+	]
+}
